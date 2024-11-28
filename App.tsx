@@ -8,7 +8,7 @@ import {
 function App() {
   return (
     <SafeAreaView>
-      <Text>Carterinha App</Text>
+      <Text>Carterinha App Vazia</Text>
     </SafeAreaView>
   );
 }
