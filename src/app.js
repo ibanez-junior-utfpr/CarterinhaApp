@@ -9,6 +9,7 @@ function App() {
   return (
     <SafeAreaView>
       <Text>Carterinha App Vazia</Text>
+      <Text>Mas nem tão vazia assim</Text>
     </SafeAreaView>
   );
 }
