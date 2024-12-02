@@ -3,14 +3,19 @@ import React from 'react';
 import { SafeAreaView } from 'react-native';
 //import Primeiro from "./components/primeiro";
 //import SocioCad from "./components/socio_cad";
-import EmissaoQRCode from "./components/emissaoqrcode";
+//import EmissaoQRCode from "./components/emissaoqrcode";
+import CadSocio from "./components/cad_socio";
 import Estilos from "./components/estilos";
 
 function App() {
   return (
     <SafeAreaView style={Estilos.container}>
+      <CadSocio />
+      {/*
       <EmissaoQRCode />
-      {/* <SocioCad /> */}
+      <SocioCad /> 
+      <Primeiro /> 
+      */}
     </SafeAreaView>
   );
 }

@@ -11,6 +11,7 @@ export default (props) => {
                 style={estilo.entrada}
                 placeholder={props.aviso}
                 keyboardType={props.teclado}
+                height={props.altura}
             />
         </Fragment>
     );
