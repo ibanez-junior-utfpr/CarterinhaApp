@@ -1,7 +1,7 @@
 /* Botão Padrão */
 
 import React from "react";
-import { Text, TouchableOpacity, Pressable, Alert, StyleSheet } from "react-native";
+import { Text, TouchableOpacity, Alert, StyleSheet } from "react-native";
 
 export default (props) => {
     return (
@@ -15,7 +15,7 @@ export default (props) => {
 const estilo = StyleSheet.create({
     botaoAmarelo: {
         paddingVertical: 12,
-        paddingHorizontal: 32,
+        paddingHorizontal: 12,
         borderRadius: 40,
         elevation: 3,
         backgroundColor: 'yellow'

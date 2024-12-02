@@ -1,13 +1,14 @@
 
 import React from 'react';
 import { SafeAreaView } from 'react-native';
-import Primeiro from "./components/primeiro";
+//import Primeiro from "./components/primeiro";
+import SocioCad from "./components/socio_cad";
 import Styles from "./components/estilos";
 
 function App() {
   return (
     <SafeAreaView style={Styles.container}>
-      <Primeiro />
+      <SocioCad />
     </SafeAreaView>
   );
 }
