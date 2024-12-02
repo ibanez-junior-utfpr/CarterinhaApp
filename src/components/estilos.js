@@ -7,7 +7,7 @@ export default StyleSheet.create({
     container: {
         flexGrow: 1,
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center"
     },
     letraG: {
         fontSize: 40,
@@ -22,6 +22,11 @@ export default StyleSheet.create({
     logo: {
         width: 250,
         height: 250,
+        margin: "auto"
+    },
+    qrcode: {
+        width: 300,
+        height: 300,
         margin: "auto"
     }
 });

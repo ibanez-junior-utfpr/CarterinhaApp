@@ -15,7 +15,7 @@ export default (props) => {
 const estilo = StyleSheet.create({
     botaoAmarelo: {
         paddingVertical: 12,
-        paddingHorizontal: 12,
+        paddingHorizontal: 32,
         borderRadius: 40,
         elevation: 3,
         backgroundColor: 'yellow'
