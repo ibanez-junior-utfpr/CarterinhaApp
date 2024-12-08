@@ -5,6 +5,7 @@ import { SafeAreaView } from 'react-native';
 //import SocioCad from "./components/socio_cad";
 //import EmissaoQRCode from "./components/emissaoqrcode";
 import CadSocio from "./components/cad_socio";
+// import Pesquisa from "./components/pesquisa";
 import Estilos from "./components/estilos";
 
 function App() {
@@ -12,6 +13,11 @@ function App() {
     <SafeAreaView style={Estilos.container}>
       <CadSocio />
       {/*
+      <Pesquisa
+        legenda="Sócio"
+        nome="Pesquisa/Sócio"
+        aviso="Pesquisa do sócio"
+      />
       <EmissaoQRCode />
       <SocioCad /> 
       <Primeiro /> 
