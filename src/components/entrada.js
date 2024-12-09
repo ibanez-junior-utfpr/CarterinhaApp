@@ -1,11 +1,11 @@
 /* Entrada Padrão */
 
-import React, { Fragment } from "react";
-import { Text, TextInput, StyleSheet } from "react-native";
+import React from "react";
+import { Text, TextInput, StyleSheet, View } from "react-native";
 
 export default (props) => {
     return (
-        <Fragment>
+        <View>
             <Text style={estilo.legenda}>{props.legenda}</Text>
             <TextInput
                 style={estilo.entrada}
@@ -13,7 +13,7 @@ export default (props) => {
                 keyboardType={props.teclado}
                 height={props.altura}
             />
-        </Fragment>
+        </View>
     );
 }
 
