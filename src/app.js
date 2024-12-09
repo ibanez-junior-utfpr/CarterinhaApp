@@ -11,12 +11,14 @@ import ListaExames from "./components/listaexames";
 import Login from "./components/login";
 import SenhaMestre from "./components/senhamestre";
 import CadAdmin from "./components/cad_admin";
+import TrocaSenha from "./components/trocasenha";
+import MenuAdmin from "./components/menuadmin";
 //import Pesquisa from "./components/pesquisa";
 import Estilos from "./components/estilos";
 import Listaexames from "./components/listaexames";
 
 function App() {
-  let opcao = 10
+  let opcao = 12
   return (
     <SafeAreaView style={Estilos.container}>
       { opcao === 1 ? <Primeiro /> : false }
@@ -29,8 +31,8 @@ function App() {
       { opcao === 8 ? <Login /> : false }
       { opcao === 9 ? <SenhaMestre /> : false }
       { opcao === 10 ? <CadAdmin /> : false }
-      { opcao === 11 ? <SocioCad /> : false }
-      { opcao === 12 ? <SocioCad /> : false }
+      { opcao === 11 ? <TrocaSenha /> : false }
+      { opcao === 12 ? <MenuAdmin /> : false }
       { opcao === 13 ? <SocioCad /> : false }
       {/*
       <Pesquisa
