@@ -12,6 +12,7 @@ export default (props) => {
                 placeholder={props.aviso}
                 keyboardType={props.teclado}
                 height={props.altura}
+                secureTextEntry={props.senha}
             />
         </View>
     );
