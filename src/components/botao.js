@@ -5,12 +5,11 @@ import { Text, TouchableOpacity, Alert, StyleSheet } from "react-native";
 
 export default (props) => {
     return (
-        <TouchableOpacity style={estilo.botaoAmarelo}
-            onPress={() => {Alert.alert('Pressionou o botão: ' + props.nome)}}>
+        <TouchableOpacity style={estilo.botaoAmarelo} onPress={props.onPress}>
             <Text style={estilo.botaoTexto}>{props.nome}</Text>
         </TouchableOpacity>
     );
-}
+};
 
 const estilo = StyleSheet.create({
     botaoAmarelo: {

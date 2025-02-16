@@ -8,15 +8,16 @@ export default (props) => {
         <View>
             <Text style={estilo.legenda}>{props.legenda}</Text>
             <TextInput
-                style={estilo.entrada}
+                style={[estilo.entrada, { height: props.altura }]} 
                 placeholder={props.aviso}
                 keyboardType={props.teclado}
-                height={props.altura}
-                secureTextEntry={props.senha}
+                secureTextEntry={props.senha} 
+                value={props.valor} 
+                onChangeText={props.setValor} 
             />
         </View>
     );
-}
+};
 
 const estilo = StyleSheet.create({
     entrada: {

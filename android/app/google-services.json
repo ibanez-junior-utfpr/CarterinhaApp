@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "997863903050",
+    "project_id": "carteirinha-22949",
+    "storage_bucket": "carteirinha-22949.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997863903050:android:507584d33cb99297307bb3",
+        "android_client_info": {
+          "package_name": "com.carterinhaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCim6VcOhNgUbtapIman77-xCNOESOckl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997863903050:android:4531481b04a7306e307bb3",
+        "android_client_info": {
+          "package_name": "com.carterinhaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCim6VcOhNgUbtapIman77-xCNOESOckl0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

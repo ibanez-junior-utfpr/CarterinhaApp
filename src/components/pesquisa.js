@@ -13,16 +13,20 @@ export default (props) => {
                     placeholder={props.aviso}
                     keyboardType={props.teclado}
                     height={props.altura}
+                    value={props.valor}  
+                    onChangeText={props.setValor}  
                 />
             </View>
             <Text></Text>
-            <TouchableOpacity style={estilo.botaoAmarelo}
-                onPress={() => {Alert.alert('Pressionou o botão: ' + props.nome)}}>
+            <TouchableOpacity 
+                style={estilo.botaoAmarelo}
+                onPress={props.onSearch} 
+            >
                 <Image style={estilo.botaoIcone} source={require('../images/pesquisa.png')} />
             </TouchableOpacity>
         </View>
     );
-}
+};
 
 const estilo = StyleSheet.create({
     botaoAmarelo: {
