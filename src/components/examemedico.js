@@ -39,7 +39,7 @@ export default (props) => {
     };
 
     return (
-        <View style={Estilos.container}>
+        <View>
             <Text style={Estilos.letraG}>Exame Médico</Text>
             <Text style={Estilos.letraM}></Text>
 

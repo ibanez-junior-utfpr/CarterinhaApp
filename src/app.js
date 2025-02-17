@@ -16,6 +16,8 @@ import Estilos from "./components/estilos";
 import firestore from '@react-native-firebase/firestore';
 import auth from '@react-native-firebase/auth';
 import firebase from '@react-native-firebase/app';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 //configuração Firebase
 const firebaseConfig = {
@@ -51,9 +53,10 @@ async function salvarDados() {
 
 
 function App() {
+  const Stack = createNativeStackNavigator();
   //salvarDados();
   
-  let opcao = 8;
+/*   let opcao = 8;
   return (
     <SafeAreaView style={Estilos.container}>
       {opcao === 1 ? <Primeiro /> : false}
@@ -70,6 +73,25 @@ function App() {
       {opcao === 12 ? <MenuAdmin /> : false}
       {opcao === 13 ? <SocioCad /> : false}
     </SafeAreaView>
+  );
+ */
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Inicial">
+        <Stack.Screen name="Inicial" component={Primeiro} />
+        <Stack.Screen name="Socio_Cadastro" component={SocioCad} />
+        <Stack.Screen name="Cadastro_Socio" component={CadSocio} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="CadAdmin" component={CadAdmin} />
+        <Stack.Screen name="MenuAdmin" component={MenuAdmin} />
+        <Stack.Screen name="TrocaSenha" component={TrocaSenha} />
+        <Stack.Screen name="SenhaMestre" component={SenhaMestre} />
+        <Stack.Screen name="LeituraQRCode" component={LeituraQRCode} />
+        <Stack.Screen name="EmissaoQRCode" component={EmissaoQRCode} />
+        <Stack.Screen name="ExameMedico" component={ExameMedico} />
+        <Stack.Screen name="ListaExames" component={ListaExames} />
+      </Stack.Navigator>
+    </NavigationContainer> 
   );
 }
 

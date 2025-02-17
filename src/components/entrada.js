@@ -8,12 +8,13 @@ export default (props) => {
         <View>
             <Text style={estilo.legenda}>{props.legenda}</Text>
             <TextInput
-                style={[estilo.entrada, { height: props.altura }]} 
+                style={[estilo.entrada, { height: props.altura, width: '100%' }]} 
                 placeholder={props.aviso}
                 keyboardType={props.teclado}
                 secureTextEntry={props.senha} 
                 value={props.valor} 
-                onChangeText={props.setValor} 
+                onChangeText={props.setValor}
+                scrollEnabled={true}
             />
         </View>
     );

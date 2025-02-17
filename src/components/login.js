@@ -6,8 +6,10 @@ import Entrada from './entrada';
 import CheckBox from "react-native-check-box";
 import TextLink from "react-native-text-link";
 import firestore from '@react-native-firebase/firestore'; // Importando Firestore
+import { useNavigation } from "@react-navigation/native";
 
 export default () => {
+    const navigation = useNavigation();
     const [isCheckedLembrar, setStateLembrar] = useState(false);
     const [login, setLogin] = useState(""); // Armazenar o login
     const [senha, setSenha] = useState(""); // Armazenar a senha
@@ -31,7 +33,8 @@ export default () => {
             if (adminRef.empty) {
                 Alert.alert("Erro", "Credenciais inválidas.");
             } else {
-                Alert.alert("Sucesso", "Login realizado com sucesso!");
+                //Alert.alert("Sucesso", "Login realizado com sucesso!");
+                navigation.navigate("MenuAdmin");
             }
         } catch (error) {
             console.error("Erro ao buscar dados no Firestore: ", error);
@@ -40,7 +43,7 @@ export default () => {
     };
 
     return (
-        <View style={Estilos.container}>
+        <View>
             <Text style={Estilos.letraG}>Login - Administrador</Text>
             <Text style={Estilos.letraG}></Text>
 
