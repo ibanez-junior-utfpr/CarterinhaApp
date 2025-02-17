@@ -85,6 +85,7 @@ export default () => {
             <Text style={Estilos.letraG}></Text>
 
             <Botao nome="Entrar" onPress={realizarLogin} />
+            <Botao nome="Novo" onPress={() => navigation.navigate("SenhaMestre", { modulo: "CadAdmin" })} />
         </View>
     );
 };

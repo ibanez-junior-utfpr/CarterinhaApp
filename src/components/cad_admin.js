@@ -4,8 +4,10 @@ import Estilos from "./estilos";
 import Botao from './botao';
 import Entrada from './entrada';
 import firestore from '@react-native-firebase/firestore';
+import { useNavigation } from "@react-navigation/native";
 
 export default () => {
+    const navigation = useNavigation();
 
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
@@ -106,6 +108,7 @@ export default () => {
 
             <Text style={Estilos.letraM}></Text>
             <Botao nome="Confirma" onPress={onConfirma} />
+            <Botao nome="Voltar" onPress={() => {navigation.navigate("Login")} } />
         </View>
     );
 };

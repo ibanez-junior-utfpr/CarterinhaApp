@@ -11,20 +11,21 @@ export default () => {
     return (
         <View>
             <Text style={Estilos.letraG}>Menu Administrador</Text>
-            <Text style={Estilos.letraM}></Text>
             <Botao
                 nome="Sócio"
                 onPress={() => {navigation.navigate("Cadastro_Socio")}}
             />
-            <Text style={Estilos.letraM}></Text>
             <Botao
                 nome="Exame Médico"
                 onPress={() => {navigation.navigate("ExameMedico")}}
             />
-            <Text style={Estilos.letraM}></Text>
             <Botao
                 nome="Troca Senha"
-                onPress={() => {navigation.navigate("TrocaSenha")}}
+                onPress={() => {navigation.navigate("SenhaMestre", { modulo: "TrocaSenha" })}}
+            />
+            <Botao
+                nome="Voltar"
+                onPress={() => {navigation.navigate("Inicial")}}
             />
         </View>
     );

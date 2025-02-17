@@ -17,10 +17,11 @@ const estilo = StyleSheet.create({
         paddingHorizontal: 32,
         borderRadius: 40,
         elevation: 3,
-        backgroundColor: 'yellow'
+        backgroundColor: 'yellow',
+        marginBottom: 12
     },
     botaoTexto: {
-        fontSize: 40,
+        fontSize: 30,
         textAlign: "center"
     },
 });
