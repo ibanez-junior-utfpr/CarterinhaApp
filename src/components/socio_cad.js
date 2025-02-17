@@ -44,13 +44,12 @@ export default () => {
             if (arquivoExiste) {
               // Apaga o arquivo
               await RNFS.unlink(path);
-              Alert.alert('Sucesso', 'Arquivo apagado com sucesso!');
             } else {
               Alert.alert('Erro', 'Arquivo não encontrado.');
             }
         } catch (erro) {
-            console.error('Erro ao apagar o arquivo:', erro);
             Alert.alert('Erro', 'Ocorreu um erro ao apagar o arquivo.');
+            console.error(erro);
         }
         try {
             // Crie um objeto JSON
@@ -64,8 +63,7 @@ export default () => {
             const jsonString = JSON.stringify(dados, null, 2);
             // Escreva o arquivo JSON no sistema de arquivos
             await RNFS.writeFile(path, jsonString, 'utf8');
-            Alert.alert('Sucesso', 'Arquivo JSON salvo com sucesso!');
-            navigation.navigate("EmissaoQRCode")
+            navigation.navigate("EmissaoQRCode", { dados: JSON.stringify(dados) });
         } catch (error) {
             Alert.alert('Erro', 'Falha ao salvar o arquivo JSON');
             console.error(error);
